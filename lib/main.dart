@@ -31,10 +31,10 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [Text('Welcome to the new app!')],
+          children: [Text('Welcome to the new app!')],
         ),
       ),
     );
