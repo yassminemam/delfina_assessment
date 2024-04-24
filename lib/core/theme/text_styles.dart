@@ -11,14 +11,14 @@ class AppTxtStyles{
   );
   static final subHeaderTxtStyle = TextStyle(
       fontSize: 12.sp,
-      color: AppColors.color_696F79,
+      color: Colors.black,
       fontWeight: FontWeight.w500,
       fontFamily: "Montserrat"
   );
 
   static final inputTxtStyle = TextStyle(
       fontSize: 16.sp,
-      color: AppColors.color_333333,
+      color: Colors.black,
       fontWeight: FontWeight.w500,
       fontFamily: "Montserrat"
   );

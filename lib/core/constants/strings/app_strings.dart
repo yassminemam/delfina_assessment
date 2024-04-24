@@ -13,4 +13,9 @@ class AppStrings {
   static const errorPasswordNotMatching = "Please enter a matching password.";
   static const errorAboutLength =
       "Please enter a valid bio at least 10 characters.";
+  static const queryValue = "dolphin";
+
+  static const play = "Play";
+  static const pause = "Pause";
+  static const rewind = "Rewind";
 }

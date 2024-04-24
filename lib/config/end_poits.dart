@@ -1,3 +1,3 @@
 class EndPoints {
-  static const String getRandomPhotos = "/photos/random";
+  static const String getPhotos = "/photos/random";
 }

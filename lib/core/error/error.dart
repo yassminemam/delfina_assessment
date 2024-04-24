@@ -1,22 +1,21 @@
 import 'package:equatable/equatable.dart';
-
 import '../constants/strings/app_strings.dart';
 
-abstract class Failure extends Equatable {
+abstract class AppError extends Equatable {
   final String _errorMessage;
 
   String get errorMessage => _errorMessage;
 
-  Failure(this._errorMessage);
+  const AppError(this._errorMessage);
 }
 
 const String messageConnectionFailure = AppStrings.errorNoInternetConnection;
 const String messageCacheFailure = AppStrings.errorCanNotAccessCache;
 
-class ServerFailure extends Failure {
+class ServerFailure extends AppError {
   final String error;
 
-  ServerFailure(this.error) : super(error);
+  const ServerFailure(this.error) : super(error);
 
   @override
   List<Object> get props => [error];
@@ -27,9 +26,9 @@ class ServerFailure extends Failure {
   }
 }
 
-class CacheFailure extends Failure {
+class CacheFailure extends AppError {
 
-  CacheFailure() : super(messageCacheFailure);
+  const CacheFailure() : super(messageCacheFailure);
 
   @override
   List<Object> get props => [];
@@ -40,8 +39,8 @@ class CacheFailure extends Failure {
   }
 }
 
-class ConnectionFailure extends Failure {
-  ConnectionFailure() : super(messageConnectionFailure);
+class ConnectionFailure extends AppError {
+  const ConnectionFailure() : super(messageConnectionFailure);
 
   @override
   List<Object> get props => [];
