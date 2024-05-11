@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:new_app/presentation/page/home_page.dart';
 import 'config/base_url_config.dart';
 import 'config/flavour_config.dart';
 import 'core/constants/colors/app_colors.dart';
-import 'presentation/bloc/photos/photos_bloc.dart';
+import 'presentation/bloc/photos/photo_bloc.dart';
 import 'injection_container.dart';
 import 'injection_container.dart' as di;
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -32,7 +33,6 @@ class MyApp extends StatelessWidget {
         child: ScreenUtilInit(
           designSize: const Size(375, 812),
           minTextAdapt: true,
-          splitScreenMode: true,
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
@@ -40,6 +40,7 @@ class MyApp extends StatelessWidget {
               colorScheme:
                   const ColorScheme.light(primary: AppColors.appMainColor),
             ),
+            home: HomePage(),
           ),
         ));
   }

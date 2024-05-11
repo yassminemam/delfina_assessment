@@ -9,7 +9,7 @@ import 'data/datasource/photos/photos_remote_datasource.dart';
 import 'data/repository/photo_repo_impl.dart';
 import 'domain/repository/photos/photo_repo.dart';
 import 'domain/usecase/photos/get_photo.dart';
-import 'presentation/bloc/photos/photos_bloc.dart';
+import 'presentation/bloc/photos/photo_bloc.dart';
 
 final sl = GetIt.instance;
 

@@ -7,6 +7,6 @@ abstract class PhotosEvent extends Equatable {
 class GetOnlinePhotosEvent extends PhotosEvent {
 
   const GetOnlinePhotosEvent();
-
-  List<Object?> get props => [];
+  @override
+  List<Object> get props => [];
 }
